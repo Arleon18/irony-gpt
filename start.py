@@ -1,6 +1,5 @@
 import openai
 
-
 openai.api_key = "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"
 initialPrompt = """hace de cuenta que sos un analizador de sentimientos. yo te paso sentimientos y vos analizas
                    el sentimiento de los mensaje y me das una respuesta con al menos 1 caracter y un máximo de 4 caracteres
@@ -31,6 +30,11 @@ class AnalizadorDeSentimientos:
 
 analizador = AnalizadorDeSentimientos()
 
+print("""Prueba de Pull Request. P.D.¡¡¡DALTO ERES UN GRANDE!!! 
+      No dejaré de aprender y aplicar mis conocimientos hasta ser
+      un gran programador, pero sobre todo hasta llegar a crear una
+      GRAN marca personal como lo has hecho tu. Eres una inspiración
+      para todos nosotros. Nunca te te detengas.""");
 
 while True:
     
@@ -52,5 +56,6 @@ while True:
     sentimiento = analizador.analizar_sentimiento(float(completion.choices[0].message['content']))
 
     print(sentimiento)
+
 
     
